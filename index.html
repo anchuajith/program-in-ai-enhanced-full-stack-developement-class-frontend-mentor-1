@@ -1,125 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | Hotel booking confirmation page</title>
+    <title>Frontend Mentor | Hotel booking confirmation page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Sidebar starts -->
-
-  Maison Soleil
-
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
-
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
-  <!-- Sidebar ends -->
-
-  <!-- Main content starts -->
-
-  Booking · Confirmed
-  Bienvenue, Lucia.
-
-  Print receipt
-  Add to calendar
-
-  <!-- Booking cards start -->
-
-  <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
-
-  Your stay
-
-  Check in
-  25 Apr
-  Saturday · 15:00
-
-  Check out
-  29 Apr
-  Wednesday · 11:00
-
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
-
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
-  <!-- Barcode image -->
-
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
-
-  <!-- Booking cards end -->
-
-  <!-- Guest info row starts -->
-
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-  <!-- Guest info row ends -->
-
-  <!-- Main content ends -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./design/css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <div>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Your Stay</a>
+            </li>
+            <li>
+              <a href="">The house</a>
+            </li>
+            <li>
+              <a href="">Around Town</a>
+            </li>
+            <li>
+              <a href="">Breakfast</a>
+            </li>
+            <li>
+              <a href="">Messages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="local-weather">
+        <p>Today in Cassis</p>
+        <p>27°</p>
+        <p>Sunny · light breeze</p>
+      </div>
+      <div class="copyright">
+        <p>Est. 1987</p>
+        <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+        <p>© 2026 Maison Soleil</p>
+      </div>
+    </aside>
+    <main>
+      <section class="header-section">
+        <div class="left">
+          <p>Booking · Confirmed</p>
+          <p>Bienvenue, Lucia.</p>
+        </div>
+        <div class="right">
+          <button>Print receipt</button>
+          <button>Add to calendar</button>
+        </div>
+      </section>
+      <section class="receipt-section">
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body"></div>
+          <div class="card-footer"></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <p>Receipt</p>
+              <p>Your stay</p>
+            </div>
+            <div class="card-header-right">
+              <p>№ MS-2026</p>
+              <p>0421-AH</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-top">
+              <div class="card-body-top-left"></div>
+              <div class="card-body-top-right"></div>
+            </div>
+            <div class="card-body-bottom">
+              <div class="item">Room · La Garrigue · 4 nights</div>
+              <div class="price">€ 620.00</div>
+              <div class="item">Breakfast · 2 guests</div>
+              <div class="price">€ 96.00</div>
+              <div class="item">Tourist tax</div>
+              <div class="price">€ 14.40</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-total">Total paid</div>
+            <div class="card-footer-total-price">€ 730.40</div>
+            <div class="card-footer-text">Paid · Wise · GBP</div>
+            <div class="card-footer-barcode"><img src="" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="card-section note-from-your-host">
+        <div class="note-card-header">
+          <div class="note-card-header-left">Welcome card</div>
+          <div class="note-card-header-right"><img src="" alt="" /></div>
+        </div>
+        <div class="note-card-body">
+          <p>A note from your host, Margaux.</p>
+          <p>
+            We're so glad you're coming. The shutters will be open, the lemonade
+            cold, and the cat - Poivre - pretending not to notice you.
+          </p>
+        </div>
+        <div class="note-card-footer">
+          <p>Room</p>
+          <p>La Garrigue</p>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
