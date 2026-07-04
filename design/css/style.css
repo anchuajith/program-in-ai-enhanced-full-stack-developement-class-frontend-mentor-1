@@ -4,13 +4,51 @@
     grid-template-columns: 300px repeat(3,1fr);
 }
 .aside{
-    grid-column: 300px;
+   min-height: 100vh;
+   display: grid;
+   grid-template-rows: 20vh repeat(5,1fr) 200px;
 }
 .main{
     grid-column: span 3;
+    grid-template-rows: 30vh repeat(5,1fr);
 }
 .header-section{
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
 }
+.receipt-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.detail-section{
+    display:flex;
+    justify-content:space-around;
+    
+}
+.title-div{
+    grid-row:150px;
+}
+.nav-div{
+    grid-row: span 4;
+}
+
+.copyright{
+    grid-row: 200px;
+}
+.receipt-section .receipt-card{
+  margin-left:20%;
+}
+.receipt-section .note-from-your-host{
+  margin-right:20%;
+}
+.receipt-section .card{
+    width:400px;
+}
+.detail-section .card{
+    width:400px;
+}
+
+
